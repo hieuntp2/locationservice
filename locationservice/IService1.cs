@@ -14,8 +14,10 @@ namespace locationservice
     {
         [OperationContract]
         [WebInvoke(BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        void reciveMyLocation(List<MyLocation> locations);
+        void json(List<MyLocation> locations);
 
+        [OperationContract]
+        void normalmethod(string x, string y, string message, DateTime time);
         // TODO: Add your service operations here
     }
 
