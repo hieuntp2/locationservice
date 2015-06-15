@@ -1,26 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="locationserviceModelStoreContainer" CdmEntityContainer="locationserviceEntities">
-    <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="locationserviceModel.sysdiagram">
-        <MappingFragment StoreEntitySet="sysdiagrams">
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-          <ScalarProperty Name="version" ColumnName="version" />
-          <ScalarProperty Name="definition" ColumnName="definition" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
+  <EntityContainerMapping StorageEntityContainer="db9afdc40e9df74a50a280a4b800f286deModelStoreContainer" CdmEntityContainer="locationserviceEntities">
     <EntitySetMapping Name="locations">
-      <EntityTypeMapping TypeName="locationserviceModel.location">
+      <EntityTypeMapping TypeName="db9afdc40e9df74a50a280a4b800f286deModel.location">
         <MappingFragment StoreEntitySet="location">
-          <ScalarProperty Name="uploadtime" ColumnName="uploadtime" />
-          <ScalarProperty Name="message" ColumnName="message" />
-          <ScalarProperty Name="time" ColumnName="time" />
-          <ScalarProperty Name="Y" ColumnName="Y" />
-          <ScalarProperty Name="X" ColumnName="X" />
           <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="X" ColumnName="X" />
+          <ScalarProperty Name="Y" ColumnName="Y" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="uploadtime" ColumnName="uploadtime" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

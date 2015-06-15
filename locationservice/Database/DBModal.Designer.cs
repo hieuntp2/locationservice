@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'E:\6. My Project\net\doma\trunk\locationservice\Database\DBModal.edmx'. 
+﻿// T4 code generation is enabled for model 'F:\5. Project\7. locationservice\trunk\locationservice\Database\DBModal.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

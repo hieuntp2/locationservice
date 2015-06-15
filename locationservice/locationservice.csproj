@@ -90,6 +90,16 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Database\DBModal.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBModal.edmx</DependentUpon>
+      <LastGenOutput>DBModal.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\DBModal.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBModal.edmx</DependentUpon>
+      <LastGenOutput>DBModal.cs</LastGenOutput>
+    </Content>
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -112,9 +122,6 @@
     <Compile Include="Database\location.cs">
       <DependentUpon>DBModal.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\sysdiagram.cs">
-      <DependentUpon>DBModal.tt</DependentUpon>
-    </Compile>
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -125,25 +132,15 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <EntityDeploy Include="Database\DBModal.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DBModal.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Database\DBModal.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBModal.edmx</DependentUpon>
-      <LastGenOutput>DBModal.Context.cs</LastGenOutput>
-    </Content>
     <Content Include="Database\DBModal.edmx.diagram">
       <DependentUpon>DBModal.edmx</DependentUpon>
     </Content>
-    <Content Include="Database\DBModal.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBModal.edmx</DependentUpon>
-      <LastGenOutput>DBModal.cs</LastGenOutput>
-    </Content>
-    <Content Include="packages.config" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
