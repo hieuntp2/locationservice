@@ -7,7 +7,7 @@
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="X" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="Y" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="time" Type="datetime" Nullable="false" />
+    <Property Name="time" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="message" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="uploadtime" Type="datetime" Nullable="false" />
   </EntityType>

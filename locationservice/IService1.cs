@@ -17,7 +17,7 @@ namespace locationservice
         void json(List<MyLocation> locations);
 
         [OperationContract]
-        void normalmethod(string x, string y, string message, DateTime time);
+        void normalmethod(string x, string y, string message, string time);
         // TODO: Add your service operations here
     }
 
