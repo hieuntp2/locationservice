@@ -17,7 +17,7 @@ namespace locationservice.Database
         public int id { get; set; }
         public string X { get; set; }
         public string Y { get; set; }
-        public System.DateTime time { get; set; }
+        public string time { get; set; }
         public string message { get; set; }
         public System.DateTime uploadtime { get; set; }
     }

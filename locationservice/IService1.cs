@@ -40,6 +40,6 @@ namespace locationservice
         public string message { get; set; }
 
         [DataMember]
-        public DateTime time { get; set; }
+        public string time { get; set; }
     }
 }

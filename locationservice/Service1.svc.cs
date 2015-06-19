@@ -36,7 +36,7 @@ namespace locationservice
             }
         }
 
-        public void normalmethod(string x, string y, string message, DateTime time)
+        public void normalmethod(string x, string y, string message, string time)
         {
             locationserviceEntities db = new locationserviceEntities();
             location item = new location();
